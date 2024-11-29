@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: rgb(241, 210, 170);
+
+        }
+        h2 {
+            text-align: center; 
+            font-family: sans-serif; 
+            font-size: 150%;
+            color: teal;
+        }
+        label{
+            margin-bottom: 5px;
+            color: teal;
+        }
+        input[type="text"] ,
+        input[type="email"]
+        {
+            padding: 10px;
+            border: 1px solid rgb(39, 102, 153);
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        .side-box {
+            padding: 5px;
+            border: 1px solid rgb(201, 194, 194);
+            border-radius: 3px;
+            margin-bottom: 15px;
+  
+            
+        }
+        .address1 {
+            width: 94%;
+            border: 1px solid rgb(39, 102, 153);
+            
+        }
+        .address3 {
+            width: 52.5%;
+            border: 1px solid rgb(39, 102, 153);
+            
+        }
+        .address4 {
+            width: 58.2%;
+            border: 1px solid rgb(39, 102, 153);
+            
+        }
+        
+        body{
+            background-color: rgb(198, 238, 238);
+        }
+        button {
+            border-radius: 10px;
+            color: teal;
+            background-color: rgb(111, 201, 111);
+            padding: 10px 20px;
+            border: none;
+                    }
+    </style>
+</head>
+<body>
+    <section class="sclform">
+        
+        <form action="" class="form">
+            <h2>School Admission Form</h2>
+           <div>
+            <div class="form-group">
+                <div class="label-group">
+                    <label>Student's Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text"  placeholder="First name" style="width: 43%;">
+                    <input type="text" placeholder="Last Name" style="width: 43.5%;"> <br>
+                </div>
+        
+            </div>
+           </div>
+            
+            <div class="form-group">
+                <div class="label-group">
+                    <label for="classname">Class you want to apply for <br> <small>For Example:class 2016-2017</small></label>
+                
+                </div>
+                <div class="input-group">
+                    <input type="text" name="classname" class="address1"> <br>
+              
+                </div>
+                
+            </div>             
+            
+            <div class="form-group">
+                <div class="label-group">
+                    <label for="dob">Student's DOB</label>
+                
+                </div>
+                <div class="input-group">
+                    <input type="date" name="dob" id="#dob" class="address1 side-box"> <br>
+
+                </div>   
+            </div>
+                
+             <div class="form-group">
+                <div class="label-group">
+                    <label for="gname">Parent/Guardian Name</label>
+                
+                </div>
+                <div class="input-group">
+                    <input type="text" name="gname" id="gname1" placeholder="first" style="width: 43%;">
+                    <input type="text" name="gname" id="gname2" placeholder="Last" style="width: 43.5%;"> <br>
+                    
+                </div>
+                
+             </div>
+             
+                
+             
+            <div class="item5 form-group" >
+                <div class="label-group">
+                    <label for="address">Current Address</Address></label>
+
+                </div>
+                <div class="item2 input-group">
+                    <input type="text" name="address" id="address" placeholder="Street Address" class="address1">
+                    <input type="text" name="address" id="address2" placeholder="Street Address Line2" class="address1"> <br>
+                    <input type="text" name="city" id="city" placeholder="city" class="address2">
+                    <input type="text" name="Region" id="Region" placeholder="Region" class="address3"> <br>
+                    <input type="text" name="pincode" id="pincode" placeholder="pincode" class="address2">
+                        <select name="text" id="country" name="country" class="address4 side-box">
+                            <option value="text">India</option>
+                            <option value="text">Australia</option>
+                            <option value="text">America</option>
+                            <option value="text">Turkey</option>
+                            <option value="text">China</option>
+                        </select> 
+
+                </div>
+            </div>
+             <div class="form-group">
+                <div class="label-group">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" name="phone" placeholder="### ### ####" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" class="address1 side-box">
+                </div>   
+             </div>
+            <div class="form-group">
+                <div class="label-group">
+                    <label for="email" >Email * <br> <small>addmission confirmation will be send via email</small> </label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" id="email" class="address1"> <br>
+                </div>    
+            </div>    
+            <div>
+                <button type="submit" value="SEND APPLICATION" class="btn">SEND APPLICATION</button>                
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
